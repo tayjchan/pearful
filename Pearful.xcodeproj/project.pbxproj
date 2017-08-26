@@ -21,6 +21,7 @@
 		3415AC5D1F47A7FE0035F804 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3415AC5C1F47A7FE0035F804 /* CoreData.framework */; };
 		3415AC691F521A600035F804 /* BudgetPieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3415AC681F521A600035F804 /* BudgetPieView.swift */; };
 		3415AC6B1F521B530035F804 /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3415AC6A1F521B530035F804 /* Budget.swift */; };
+		3415AC6D1F521DF00035F804 /* Todo in Resources */ = {isa = PBXBuildFile; fileRef = 3415AC6C1F521DF00035F804 /* Todo */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		3415AC5C1F47A7FE0035F804 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		3415AC681F521A600035F804 /* BudgetPieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetPieView.swift; sourceTree = "<group>"; };
 		3415AC6A1F521B530035F804 /* Budget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
+		3415AC6C1F521DF00035F804 /* Todo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Todo; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				3415AC2F1F477B2E0035F804 /* Main.storyboard */,
 				3415AC671F520ED40035F804 /* Supporting Files */,
 				3415AC321F477B2E0035F804 /* Pearful.xcdatamodeld */,
+				3415AC6C1F521DF00035F804 /* Todo */,
 			);
 			path = Pearful;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 			files = (
 				3415AC391F477B2E0035F804 /* LaunchScreen.storyboard in Resources */,
 				3415AC361F477B2E0035F804 /* Assets.xcassets in Resources */,
+				3415AC6D1F521DF00035F804 /* Todo in Resources */,
 				3415AC311F477B2E0035F804 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

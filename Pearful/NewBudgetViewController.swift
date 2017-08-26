@@ -24,7 +24,7 @@ class NewBudgetViewController: UIViewController, UITextFieldDelegate {
                 let newBudget = Budget (context: context)
                 newBudget.name = self.newBudgetName.text!
                 newBudget.maxSpend = convertedNewBudgetMaxSpend
-                newBudget.leftToSpend = 0.00
+                newBudget.leftToSpend = convertedNewBudgetMaxSpend
                 (UIApplication.shared.delegate as! AppDelegate).saveContext()
                 self.performSegue(withIdentifier: "backToBudgetsSegue", sender: self)
         })

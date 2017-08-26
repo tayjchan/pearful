@@ -13,8 +13,6 @@ class ViewBudgetsViewController: UIViewController {
 
     @IBOutlet weak var samplePieGraph: PieChartView!
     @IBOutlet weak var scrollView: UIScrollView!
-    var workoutDuration = [String]()
-    var beatsPerMin = [String]()
     var budgets = [Budget]()
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
@@ -51,20 +49,20 @@ class ViewBudgetsViewController: UIViewController {
     
     func populateChartData(){
         // need to replace
-        var values: [PieChartDataEntry] = []
-        let firstBudget = budgets[0]
-        firstBudget.spent = 10
-        let dataEntry = PieChartDataEntry(value: firstBudget.leftToSpend, label: "$\(firstBudget.leftToSpend) left")
-        values.append(dataEntry)
-        let dataEntry2 = PieChartDataEntry(value: firstBudget.spent, label: "$\(firstBudget.spent) spent")
-        values.append(dataEntry2)
-        
-        let pieChartDataSet = PieChartDataSet(values: values, label: "\(firstBudget.name ?? "Unknown Budget")")
-        pieChartDataSet.sliceSpace = 1
-        pieChartDataSet.colors = [UIColor.red, UIColor.green, UIColor.blue]
-        
-        samplePieGraph.data = PieChartData(dataSet: pieChartDataSet)
-       
+        if budgets.count != 0 {
+            var values: [PieChartDataEntry] = []
+            let firstBudget = budgets[0]
+            let dataEntry = PieChartDataEntry(value: firstBudget.leftToSpend, label: "$\(firstBudget.leftToSpend) left")
+            values.append(dataEntry)
+            let dataEntry2 = PieChartDataEntry(value: firstBudget.spent, label: "$\(firstBudget.spent) spent")
+            values.append(dataEntry2)
+            
+            let pieChartDataSet = PieChartDataSet(values: values, label: "\(firstBudget.name ?? "Unknown Budget")")
+            pieChartDataSet.sliceSpace = 1
+            pieChartDataSet.colors = [UIColor.red, UIColor.green, UIColor.blue]
+            
+            samplePieGraph.data = PieChartData(dataSet: pieChartDataSet)
+        }
         
     }
 }

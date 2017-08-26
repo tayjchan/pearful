@@ -299,6 +299,7 @@
                         <outlet property="expenseCategory" destination="afA-k0-d87" id="CfX-0e-NaW"/>
                         <outlet property="expenseCost" destination="0Yj-IM-gLM" id="7ck-5s-B1U"/>
                         <outlet property="expenseName" destination="oOb-Ol-HxY" id="Xrt-nm-6oS"/>
+                        <outlet property="saveButton" destination="DzP-dD-kCH" id="RZd-6s-dC4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R5P-JB-D9F" userLabel="First Responder" sceneMemberID="firstResponder"/>
