@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3415AC2C1F477B2E0035F804 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3415AC2B1F477B2E0035F804 /* AppDelegate.swift */; };
+		3415AC2E1F477B2E0035F804 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3415AC2D1F477B2E0035F804 /* ViewController.swift */; };
+		3415AC311F477B2E0035F804 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3415AC2F1F477B2E0035F804 /* Main.storyboard */; };
+		3415AC341F477B2E0035F804 /* Pearful.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3415AC321F477B2E0035F804 /* Pearful.xcdatamodeld */; };
+		3415AC361F477B2E0035F804 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3415AC351F477B2E0035F804 /* Assets.xcassets */; };
+		3415AC391F477B2E0035F804 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3415AC371F477B2E0035F804 /* LaunchScreen.storyboard */; };
+		3415AC471F4782970035F804 /* ViewBudgetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3415AC461F4782970035F804 /* ViewBudgetsViewController.swift */; };
+		3415AC4A1F4797750035F804 /* NewExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3415AC491F4797750035F804 /* NewExpenseViewController.swift */; };
+		3415AC4C1F479C190035F804 /* NewBudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3415AC4B1F479C190035F804 /* NewBudgetViewController.swift */; };
+		3415AC4E1F47A5A10035F804 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3415AC4D1F47A5A10035F804 /* Charts.framework */; };
+		3415AC4F1F47A5A10035F804 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3415AC4D1F47A5A10035F804 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3415AC5D1F47A7FE0035F804 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3415AC5C1F47A7FE0035F804 /* CoreData.framework */; };
+		3415AC691F521A600035F804 /* BudgetPieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3415AC681F521A600035F804 /* BudgetPieView.swift */; };
+		3415AC6B1F521B530035F804 /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3415AC6A1F521B530035F804 /* Budget.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3415AC571F47A5D80035F804 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3415AC521F47A5D80035F804 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F241D8110E600722320;
+			remoteInfo = Charts;
+		};
+		3415AC591F47A5D80035F804 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3415AC521F47A5D80035F804 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F2E1D8110E600722320;
+			remoteInfo = ChartsTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3415AC501F47A5A10035F804 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3415AC4F1F47A5A10035F804 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3415AC281F477B2E0035F804 /* Pearful.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pearful.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3415AC2B1F477B2E0035F804 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3415AC2D1F477B2E0035F804 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3415AC301F477B2E0035F804 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3415AC331F477B2E0035F804 /* Pearful.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pearful.xcdatamodel; sourceTree = "<group>"; };
+		3415AC351F477B2E0035F804 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3415AC381F477B2E0035F804 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3415AC3A1F477B2E0035F804 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3415AC461F4782970035F804 /* ViewBudgetsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewBudgetsViewController.swift; sourceTree = "<group>"; };
+		3415AC491F4797750035F804 /* NewExpenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewExpenseViewController.swift; sourceTree = "<group>"; };
+		3415AC4B1F479C190035F804 /* NewBudgetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewBudgetViewController.swift; sourceTree = "<group>"; };
+		3415AC4D1F47A5A10035F804 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3415AC521F47A5D80035F804 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = ../Charts/Charts.xcodeproj; sourceTree = "<group>"; };
+		3415AC5C1F47A7FE0035F804 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3415AC681F521A600035F804 /* BudgetPieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetPieView.swift; sourceTree = "<group>"; };
+		3415AC6A1F521B530035F804 /* Budget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3415AC251F477B2E0035F804 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3415AC5D1F47A7FE0035F804 /* CoreData.framework in Frameworks */,
+				3415AC4E1F47A5A10035F804 /* Charts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3415AC1F1F477B2E0035F804 = {
+			isa = PBXGroup;
+			children = (
+				3415AC2A1F477B2E0035F804 /* Pearful */,
+				3415AC291F477B2E0035F804 /* Products */,
+				3415AC511F47A5D80035F804 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3415AC291F477B2E0035F804 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3415AC281F477B2E0035F804 /* Pearful.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3415AC2A1F477B2E0035F804 /* Pearful */ = {
+			isa = PBXGroup;
+			children = (
+				3415AC6A1F521B530035F804 /* Budget.swift */,
+				3415AC681F521A600035F804 /* BudgetPieView.swift */,
+				3415AC481F4782FC0035F804 /* ViewControllers */,
+				3415AC2F1F477B2E0035F804 /* Main.storyboard */,
+				3415AC671F520ED40035F804 /* Supporting Files */,
+				3415AC321F477B2E0035F804 /* Pearful.xcdatamodeld */,
+			);
+			path = Pearful;
+			sourceTree = "<group>";
+		};
+		3415AC481F4782FC0035F804 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3415AC4B1F479C190035F804 /* NewBudgetViewController.swift */,
+				3415AC2D1F477B2E0035F804 /* ViewController.swift */,
+				3415AC461F4782970035F804 /* ViewBudgetsViewController.swift */,
+				3415AC491F4797750035F804 /* NewExpenseViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3415AC511F47A5D80035F804 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3415AC4D1F47A5A10035F804 /* Charts.framework */,
+				3415AC5C1F47A7FE0035F804 /* CoreData.framework */,
+				3415AC521F47A5D80035F804 /* Charts.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3415AC531F47A5D80035F804 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3415AC581F47A5D80035F804 /* Charts.framework */,
+				3415AC5A1F47A5D80035F804 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3415AC671F520ED40035F804 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3415AC351F477B2E0035F804 /* Assets.xcassets */,
+				3415AC3A1F477B2E0035F804 /* Info.plist */,
+				3415AC2B1F477B2E0035F804 /* AppDelegate.swift */,
+				3415AC371F477B2E0035F804 /* LaunchScreen.storyboard */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3415AC271F477B2E0035F804 /* Pearful */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3415AC3D1F477B2E0035F804 /* Build configuration list for PBXNativeTarget "Pearful" */;
+			buildPhases = (
+				3415AC241F477B2E0035F804 /* Sources */,
+				3415AC251F477B2E0035F804 /* Frameworks */,
+				3415AC261F477B2E0035F804 /* Resources */,
+				3415AC501F47A5A10035F804 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pearful;
+			productName = Pearful;
+			productReference = 3415AC281F477B2E0035F804 /* Pearful.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3415AC201F477B2E0035F804 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Taylor Chan";
+				TargetAttributes = {
+					3415AC271F477B2E0035F804 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3415AC231F477B2E0035F804 /* Build configuration list for PBXProject "Pearful" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3415AC1F1F477B2E0035F804;
+			productRefGroup = 3415AC291F477B2E0035F804 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3415AC531F47A5D80035F804 /* Products */;
+					ProjectRef = 3415AC521F47A5D80035F804 /* Charts.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				3415AC271F477B2E0035F804 /* Pearful */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3415AC581F47A5D80035F804 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 3415AC571F47A5D80035F804 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3415AC5A1F47A5D80035F804 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 3415AC591F47A5D80035F804 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3415AC261F477B2E0035F804 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3415AC391F477B2E0035F804 /* LaunchScreen.storyboard in Resources */,
+				3415AC361F477B2E0035F804 /* Assets.xcassets in Resources */,
+				3415AC311F477B2E0035F804 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3415AC241F477B2E0035F804 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3415AC471F4782970035F804 /* ViewBudgetsViewController.swift in Sources */,
+				3415AC691F521A600035F804 /* BudgetPieView.swift in Sources */,
+				3415AC6B1F521B530035F804 /* Budget.swift in Sources */,
+				3415AC341F477B2E0035F804 /* Pearful.xcdatamodeld in Sources */,
+				3415AC4C1F479C190035F804 /* NewBudgetViewController.swift in Sources */,
+				3415AC2E1F477B2E0035F804 /* ViewController.swift in Sources */,
+				3415AC4A1F4797750035F804 /* NewExpenseViewController.swift in Sources */,
+				3415AC2C1F477B2E0035F804 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3415AC2F1F477B2E0035F804 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3415AC301F477B2E0035F804 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3415AC371F477B2E0035F804 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3415AC381F477B2E0035F804 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3415AC3B1F477B2E0035F804 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3415AC3C1F477B2E0035F804 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3415AC3E1F477B2E0035F804 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Pearful/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.taylor.chan.Pearful;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3415AC3F1F477B2E0035F804 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Pearful/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.taylor.chan.Pearful;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3415AC231F477B2E0035F804 /* Build configuration list for PBXProject "Pearful" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3415AC3B1F477B2E0035F804 /* Debug */,
+				3415AC3C1F477B2E0035F804 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3415AC3D1F477B2E0035F804 /* Build configuration list for PBXNativeTarget "Pearful" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3415AC3E1F477B2E0035F804 /* Debug */,
+				3415AC3F1F477B2E0035F804 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3415AC321F477B2E0035F804 /* Pearful.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3415AC331F477B2E0035F804 /* Pearful.xcdatamodel */,
+			);
+			currentVersion = 3415AC331F477B2E0035F804 /* Pearful.xcdatamodel */;
+			path = Pearful.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3415AC201F477B2E0035F804 /* Project object */;
+}
